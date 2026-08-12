@@ -419,7 +419,7 @@ const confirmVerification = async(req,res)=>{
 Your Career Compass account has been created successfully.
 </p>
 
-<a href="http://localhost:5173">
+<a href="https://career-compass-am23-sepia.vercel.app">
 
 Go to Career Compass Website
 
