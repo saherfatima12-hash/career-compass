@@ -1,49 +1,54 @@
 require("dotenv").config();
-const userRoutes = require("./routes/userRoutes");
-const geminiRoutes = require("./routes/geminiRoutes");
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
+const userRoutes = require("./routes/userRoutes");
+const geminiRoutes = require("./routes/geminiRoutes");
 
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(express.json());
+
 app.use("/api/users", userRoutes);
 app.use("/api/gemini", geminiRoutes);
-// Test Route
+
 app.get("/", (req, res) => {
   res.send("Career Compass Backend Running");
 });
 
+app.get("/healthz", (req, res) => {
+  res.json({
+    success: true,
+    message: "Backend is healthy"
+  });
+});
 
-const PORT = process.env.PORT || 5000;
-const RETRY_DELAY_MS = 5000;
+let isConnected = false;
 
-async function connectToDatabase() {
-  try {
-    await mongoose.connect(process.env.MONGO_URI, {
-      serverSelectionTimeoutMS: 10000,
-    });
-    console.log("MongoDB connected successfully");
+async function connectDB() {
+  if (isConnected) return;
 
-    app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-    });
-  } catch (error) {
-    console.error("MongoDB connection failed:", error.message);
+  await mongoose.connect(process.env.MONGO_URI, {
+    serverSelectionTimeoutMS: 10000,
+  });
 
-    if (error.code === "ECONNREFUSED" && error.syscall === "querySrv") {
-      console.error(
-        "MongoDB Atlas DNS lookup was refused. Check your internet/VPN and DNS settings, then retry."
-      );
-    }
-
-    console.log(`Retrying MongoDB connection in ${RETRY_DELAY_MS / 1000} seconds...`);
-    setTimeout(connectToDatabase, RETRY_DELAY_MS);
-  }
+  isConnected = true;
+  console.log("MongoDB connected successfully");
 }
 
-connectToDatabase();
+module.exports = async (req, res) => {
+  try {
+    await connectDB();
+    return app(req, res);
+  } catch (error) {
+    console.error("MongoDB connection failed:", error);
+
+    return res.status(500).json({
+      success: false,
+      message: "Database connection failed",
+    });
+  }
+};
