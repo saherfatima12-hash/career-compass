@@ -124,7 +124,7 @@
 .hero-title {
   position: relative;
   z-index: 1;
-  font-weight: 600;
+  font-weight: 700;
   font-size: clamp(1rem, 3vw, 1.9rem);
   line-height: 1.18;
   margin: 20px 0 14px;
