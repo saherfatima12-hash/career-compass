@@ -311,7 +311,7 @@ body {
 
   0 30px 90px rgba(0,0,0,0.5);
 
-
+   border: 10px solid red !important;
 
   position:relative;
 
@@ -1446,8 +1446,8 @@ margin:10px auto 0;
 }
 
 .hero-title {
-  font-weight: 700;
-  font-size: 52px;
+  font-weight: 500;
+  font-size: 42px;
   max-width: 880px;
   line-height: 1.18;
 
