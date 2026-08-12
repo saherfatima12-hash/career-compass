@@ -662,7 +662,7 @@ export const generateGuidance = async (student) => {
   let aiGuidance = null;
   try {
     const response = await fetch(
-      "http://localhost:5000/api/gemini/generate-guidance",
+      "https://career-compass-eo2e.vercel.app/api/gemini/generate-guidance",
       {
         method: "POST",
         headers: {

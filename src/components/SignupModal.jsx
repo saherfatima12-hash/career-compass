@@ -146,7 +146,7 @@ else if(!/^[A-Za-z\s]+$/.test(user.name)){
 
       await axios.post(
 
-        "http://localhost:5000/api/users/register",
+        "https://career-compass-eo2e.vercel.app/api/users/register",
 
         user
 
@@ -221,7 +221,7 @@ else if(!/^[A-Za-z\s]+$/.test(user.name)){
 
         const response = await axios.get(
 
-          `http://localhost:5000/api/users/check-verification/${user.email}`
+          `https://career-compass-eo2e.vercel.app/api/users/check-verification/${user.email}`
 
         );
 

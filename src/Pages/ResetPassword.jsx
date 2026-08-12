@@ -51,7 +51,7 @@ const ResetPassword = () => {
 
       const response = await axios.post(
 
-        `http://localhost:5000/api/users/reset-password/${token}`,
+        `https://career-compass-eo2e.vercel.app/api/users/reset-password/${token}`,
 
         {
           password

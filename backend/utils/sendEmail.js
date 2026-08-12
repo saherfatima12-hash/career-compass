@@ -28,7 +28,7 @@ const sendEmail = async (email, token, type="verify") => {
     if(type === "reset"){
 
 
-        link = `http://localhost:5173/reset-password/${token}`;
+        link = `https://career-compass-am23-sepia.vercel.app/reset-password/${token}`;
 
         subject = "Career Compass - Reset Password";
 
@@ -44,7 +44,7 @@ const sendEmail = async (email, token, type="verify") => {
     else{
 
 
-        link = `http://localhost:5000/api/users/verify/${token}`;
+        link = `https://career-compass-eo2e.vercel.app/api/users/verify/${token}`;
 
         subject = "Career Compass - Email Verification";
 

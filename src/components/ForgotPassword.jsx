@@ -30,7 +30,7 @@ const ForgotPassword = ({ closeForgot }) => {
 
       const response = await axios.post(
 
-        "http://localhost:5000/api/users/forgot-password",
+        "https://career-compass-eo2e.vercel.app/api/users/forgot-password",
 
         {
           email

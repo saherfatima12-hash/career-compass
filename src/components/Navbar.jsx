@@ -38,7 +38,7 @@ const Navbar = ({
 
         const response = await axios.get(
 
-          `http://localhost:5000/api/users/check-user/${savedUser.email}`
+          `https://career-compass-eo2e.vercel.app/api/users/check-user/${savedUser.email}`
 
         );
 
