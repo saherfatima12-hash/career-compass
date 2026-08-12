@@ -10,7 +10,9 @@ const {
     checkUser,
     checkVerification,
     confirmVerification,
-    cancelVerification
+    cancelVerification,
+    forgotPassword,
+    resetPassword
 } = require("../controllers/userController");
 
 
@@ -63,7 +65,14 @@ router.get(
     "/check-verification/:email",
     checkVerification
 );
-
-
+// Forgot password route
+router.post(
+    "/forgot-password",
+    forgotPassword
+);
+router.post(
+    "/reset-password/:token",
+    resetPassword
+);
 
 module.exports = router;

@@ -61,9 +61,15 @@ const SignupModal = ({ closeModal, setUser: updateNavbarUser }) => {
 
     if(!user.name){
 
-      newErrors.name = "Please enter your name";
+  newErrors.name = "Please enter your name";
 
-    }
+}
+
+else if(!/^[A-Za-z\s]+$/.test(user.name)){
+
+  newErrors.name = "Name should contain only letters";
+
+}
 
 
 
@@ -168,7 +174,7 @@ const SignupModal = ({ closeModal, setUser: updateNavbarUser }) => {
 
         setErrors({
 
-          email:error.response.data.message
+          general:error.response.data.message
 
         });
 
@@ -381,7 +387,14 @@ const SignupModal = ({ closeModal, setUser: updateNavbarUser }) => {
         <p>
           Sign up to explore personalized career guidance.
         </p>
+        {
+errors.general &&
 
+<p className="input-error general-error">
+{errors.general}
+</p>
+
+}
 
 
 
@@ -565,16 +578,7 @@ const SignupModal = ({ closeModal, setUser: updateNavbarUser }) => {
 
 
 
-      {
-        errors.general &&
-
-        <p className="input-error">
-
-        {errors.general}
-
-        </p>
-
-      }
+      
 
 
 

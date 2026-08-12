@@ -1,8 +1,10 @@
+require("dotenv").config();
 const userRoutes = require("./routes/userRoutes");
+const geminiRoutes = require("./routes/geminiRoutes");
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-require("dotenv").config();
+
 
 const app = express();
 
@@ -10,6 +12,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/api/users", userRoutes);
+app.use("/api/gemini", geminiRoutes);
 // Test Route
 app.get("/", (req, res) => {
   res.send("Career Compass Backend Running");

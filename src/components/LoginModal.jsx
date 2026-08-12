@@ -4,7 +4,12 @@ import { useState } from "react";
 import axios from "axios";
 
 
-const LoginModal = ({ closeLogin, openSignup, setUser: updateNavbarUser }) => {
+const LoginModal = ({ 
+  closeLogin, 
+  openSignup, 
+  openForgotPassword,
+  setUser: updateNavbarUser 
+}) => {
 
 
   const [user, setLoginUser] = useState({
@@ -38,12 +43,6 @@ const LoginModal = ({ closeLogin, openSignup, setUser: updateNavbarUser }) => {
 
 
   };
-
-
-
-
-
-
 
   const handleLogin = async()=>{
 
@@ -338,7 +337,12 @@ closeLogin();
 
         </button>
 
-
+<p 
+ className="forgot-password"
+ onClick={openForgotPassword}
+>
+ Forgot Password?
+</p>
 
 
 
@@ -347,11 +351,9 @@ closeLogin();
 
           Don't have an account?
 
-          <p onClick={openSignup}>
-
-            Sign Up
-
-          </p>
+           <span onClick={openSignup}>
+    Sign Up
+  </span>
 
 
         </p>

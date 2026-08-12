@@ -1,0 +1,922 @@
+/* ============================================================
+   CareerForm.css — Premium AI Career Assessment Experience
+   ============================================================ */
+
+.assessment-form{
+position:fixed;
+inset:0;
+overflow-y:auto;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:24px;
+background:
+  radial-gradient(circle at 20% 20%, rgba(139,92,246,.25), transparent 55%),
+  radial-gradient(circle at 80% 80%, rgba(59,130,246,.25), transparent 55%),
+  rgba(15,23,42,.65);
+backdrop-filter:blur(4px);
+-webkit-backdrop-filter:blur(4px);
+z-index:9999;
+animation:overlayFade .35s ease;
+}
+
+@keyframes overlayFade{
+from{ opacity:0; }
+to{ opacity:1; }
+}
+
+/* Shell wraps the card + close button + progress bar so positioning
+   is relative to the form itself, not the viewport */
+
+.form-shell{
+position:relative;
+width:100%;
+max-width:769px;
+}
+
+.close-form{
+
+position:absolute;
+
+top:30px;
+
+right:12px;
+
+width:44px !important;
+
+height:44px;
+
+padding:0 !important;
+
+margin:0 !important;
+
+border-radius:50% !important;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+line-height:1;
+
+background:
+linear-gradient(
+135deg,
+#977ec2,
+#ec96c1,
+#95b2f1
+);
+
+font-size:24px !important;
+
+color:white;
+
+z-index:20;
+
+border:2px solid rgba(255,255,255,.55);
+
+box-shadow:0 10px 26px rgba(15,23,42,.35);
+
+transition:transform .25s ease, background .25s ease, box-shadow .25s ease;
+
+}
+
+
+.close-form:hover{
+
+background:linear-gradient(
+135deg,
+#3f3353,
+#b11563,
+#1b3774
+);
+
+transform:rotate(90deg) scale(1.05);
+
+box-shadow:0 14px 32px rgba(177,21,99,.45);
+
+}
+
+.close-form:focus-visible{
+outline:3px solid rgba(191,219,254,.95);
+outline-offset:3px;
+}
+
+/* Progress bar */
+
+.progress-track{
+position:relative;
+width:100%;
+height:6px;
+border-radius:999px;
+background:rgba(255,255,255,.18);
+overflow:hidden;
+margin-bottom:14px;
+box-shadow:inset 0 1px 3px rgba(0,0,0,.25);
+}
+
+.progress-fill{
+height:100%;
+border-radius:999px;
+background:linear-gradient(90deg, #8b5cf6, #ec96c1, #60a5fa);
+background-size:200% 100%;
+transition:width .4s ease;
+animation:progressShimmer 2.4s linear infinite;
+}
+
+@keyframes progressShimmer{
+0%{ background-position:0% 0; }
+100%{ background-position:200% 0; }
+}
+
+/* MAIN GLASS FORM */
+
+.form-card{
+
+width:100%;
+
+min-height:487px;
+
+padding:56px 64px;
+
+
+border-radius:32px;
+
+position:relative;
+
+overflow:hidden;
+
+
+background:
+
+linear-gradient(
+135deg,
+rgba(255,255,255,0.35),
+rgba(255,255,255,0.12)
+);
+
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+
+border:1px solid rgba(255,255,255,.4);
+
+
+box-shadow:
+
+0 24px 60px rgba(0,0,0,.28),
+inset 0 1px 0 rgba(255,255,255,.35);
+
+
+animation:formOpen .5s cubic-bezier(.22,1,.36,1);
+
+}
+
+@keyframes formOpen{
+from{
+opacity:0;
+transform:translateY(18px) scale(.98);
+}
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+}
+
+
+/* soft purple-blue glow */
+
+.form-card::before{
+
+content:"";
+
+position:absolute;
+
+width:260px;
+
+height:260px;
+
+
+background:
+
+radial-gradient(
+circle,
+rgba(168,85,247,.45),
+transparent 70%
+);
+
+
+top:-110px;
+
+left:-110px;
+
+
+filter:blur(35px);
+
+
+z-index:-1;
+
+}
+
+
+
+.form-card::after{
+
+content:"";
+
+position:absolute;
+
+width:260px;
+
+height:260px;
+
+
+background:
+
+radial-gradient(
+circle,
+rgba(59,130,246,.45),
+transparent 70%
+);
+
+
+bottom:-110px;
+
+right:-110px;
+
+
+filter:blur(35px);
+
+
+z-index:-1;
+
+}
+
+/* eyebrow label */
+
+.step-eyebrow{
+display:inline-block;
+font-size:12.5px;
+font-weight:700;
+letter-spacing:.08em;
+text-transform:uppercase;
+color:#fdf4ff;
+background:rgba(255,255,255,.22);
+border:1px solid rgba(255,255,255,.45);
+padding:6px 14px;
+border-radius:999px;
+margin-bottom:18px;
+text-shadow:none;
+}
+
+
+
+/* heading */
+
+
+.form-card h2{
+
+
+font-size:32px;
+
+font-weight:800;
+
+line-height:1.25;
+
+
+color:white;
+
+
+margin:0 0 12px;
+
+
+text-shadow:
+
+0 0 24px rgba(255,255,255,.5);
+
+
+}
+
+/* description text */
+
+.form-description{
+color:rgba(255,255,255,.85);
+font-size:15.5px;
+line-height:1.6;
+margin:0 0 28px;
+max-width:520px;
+}
+
+
+
+/* inputs */
+
+
+.form-card input,
+.form-card select{
+
+
+width:100%;
+
+
+padding:16px 18px;
+
+
+margin:10px 0;
+
+
+border-radius:16px;
+
+
+border:1px solid rgba(255,255,255,.35);
+
+
+outline:none;
+
+
+background:
+
+rgba(255,255,255,.28);
+
+
+color:#132958;
+
+
+font-size:16px;
+
+font-weight:500;
+
+
+backdrop-filter:blur(6px);
+
+
+transition:border-color .2s ease, box-shadow .2s ease, background .2s ease;
+
+
+}
+
+.form-card input:focus,
+.form-card select:focus{
+
+background:rgba(255,255,255,.42);
+
+border-color:rgba(139,92,246,.8);
+
+box-shadow:0 0 0 4px rgba(139,92,246,.25);
+
+}
+
+
+
+.form-card input::placeholder{
+
+color:#475569;
+
+}
+
+.form-card select{
+cursor:pointer;
+appearance:none;
+-webkit-appearance:none;
+background-image:
+  linear-gradient(45deg, transparent 50%, #132958 50%),
+  linear-gradient(135deg, #132958 50%, transparent 50%);
+background-position:
+  calc(100% - 22px) calc(50% - 3px),
+  calc(100% - 16px) calc(50% - 3px);
+background-size:6px 6px, 6px 6px;
+background-repeat:no-repeat;
+}
+
+
+
+
+/* buttons */
+
+
+.form-card button{
+
+
+padding:14px 46px;
+
+
+margin-top:22px;
+
+
+border:none;
+
+
+border-radius:40px;
+
+
+background:
+
+linear-gradient(
+135deg,
+#977ec2,
+#ec96c1,
+#95b2f1
+);
+
+
+background-size:200%;
+
+
+color:white;
+
+
+font-size:17px;
+
+
+font-weight:700;
+
+letter-spacing:.01em;
+
+
+cursor:pointer;
+
+
+box-shadow:
+
+0 16px 36px rgba(236,72,153,.35);
+
+
+animation:none;
+
+transition:transform .22s ease, background .3s ease, box-shadow .22s ease;
+
+
+}
+
+
+
+.form-card button:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 20px 42px rgba(99,102,241,.4);
+
+background:
+
+linear-gradient(
+135deg,
+#3f3353,
+#b11563,
+#1b3774
+);
+
+}
+
+.form-card button:active{
+transform:translateY(-1px);
+}
+
+.form-card button:focus-visible{
+outline:3px solid rgba(191,219,254,.95);
+outline-offset:3px;
+}
+
+.interests-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:14px;
+
+margin:22px 0 8px;
+
+}
+
+
+
+.form-card .option-btn{
+
+display:flex;
+
+align-items:center;
+
+width:100%;
+
+min-height:58px;
+
+margin:12px 0 0;
+
+padding:14px 22px;
+
+text-align:left;
+
+font-size:15.5px;
+
+font-weight:600;
+
+line-height:1.4;
+
+color:#0f172a;
+
+background:rgba(255,255,255,.5);
+
+border:1px solid rgba(255,255,255,.55);
+
+box-shadow:0 10px 26px rgba(15,23,42,.12);
+
+border-radius:18px;
+
+}
+
+.form-card .option-btn:hover{
+
+background:rgba(255,255,255,.68);
+
+transform:translateY(-3px);
+
+box-shadow:0 14px 30px rgba(15,23,42,.18);
+
+}
+
+.form-card .option-btn:focus-visible{
+
+outline:3px solid rgba(191,219,254,.95);
+
+outline-offset:3px;
+
+}
+
+.form-card .option-btn.active{
+
+background:linear-gradient(135deg, #8b5cf6 0%, #6366f1 48%, #2563eb 100%);
+
+color:white;
+
+border:1px solid rgba(255,255,255,.85);
+
+box-shadow:0 16px 36px rgba(99,102,241,.5), inset 0 1px 0 rgba(255,255,255,.3);
+
+transform:translateY(-2px);
+
+}
+
+.interests-grid .option-btn{
+
+margin:0;
+
+}
+
+.semester-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2, minmax(0, 1fr));
+
+gap:14px;
+
+margin-top:20px;
+
+}
+
+.semester-grid .option-btn{
+
+margin:0;
+
+text-align:center;
+
+justify-content:center;
+
+}
+
+.input-error{
+
+color:#ffe0ec;
+
+background:rgba(190,24,93,.35);
+
+border:1px solid rgba(255,255,255,.3);
+
+font-size:13.5px;
+
+font-weight:600;
+
+text-align:left;
+
+padding:8px 14px;
+
+border-radius:12px;
+
+margin-top:-4px;
+
+margin-bottom:12px;
+
+}
+
+/* Custom scrollbar for tall steps (e.g. long option lists) */
+
+.form-card::-webkit-scrollbar{
+width:8px;
+}
+
+.form-card::-webkit-scrollbar-thumb{
+background:rgba(255,255,255,.35);
+border-radius:999px;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width:900px){
+
+.form-card{
+padding:44px 40px;
+}
+
+}
+
+@media (max-width:640px){
+
+.assessment-form{
+padding:12px;
+align-items:flex-start;
+padding-top:24px;
+}
+
+.form-shell{
+max-width:100%;
+}
+
+.form-card{
+padding:32px 24px;
+border-radius:26px;
+min-height:auto;
+max-height:88vh;
+overflow-y:auto;
+}
+
+.form-card h2{
+font-size:24px;
+}
+
+.form-description{
+font-size:14.5px;
+margin-bottom:20px;
+}
+
+.interests-grid,
+.semester-grid{
+grid-template-columns:1fr;
+}
+
+.close-form{
+top:-14px;
+right:-8px;
+width:38px !important;
+height:38px;
+font-size:20px !important;
+}
+
+.form-card button{
+width:100%;
+padding:14px 24px;
+}
+
+}
+
+@media (min-width:641px) and (max-width:900px){
+
+.interests-grid{
+grid-template-columns:1fr;
+}
+
+}
+.next-btn.submitting {
+  background: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.next-btn.submitting:hover {
+  background: #9ca3af;
+  transform: none;
+}
+/* ============================================================
+   MOBILE — COMPACT CAREER ASSESSMENT FORM
+   ============================================================ */
+
+@media (max-width: 640px) {
+
+  .assessment-form {
+    padding: 8px;
+    align-items: flex-start;
+    padding-top: 18px;
+  }
+
+  .form-shell {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  /* ---------- FORM CARD ---------- */
+
+  .form-card {
+    width: 100%;
+    padding: 22px 16px;
+    border-radius: 20px;
+    min-height: auto;
+    max-height: 82vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+  /* ---------- CLOSE BUTTON ---------- */
+
+  .close-form {
+    top: -10px;
+    right: -5px;
+
+    width: 30px !important;
+    height: 30px;
+
+    font-size: 16px !important;
+    border-width: 1px;
+  }
+
+  /* ---------- STEP LABEL ---------- */
+
+  .step-eyebrow {
+    font-size: 8px;
+    padding: 4px 9px;
+    margin-bottom: 10px;
+    letter-spacing: .06em;
+  }
+
+  /* ---------- HEADING ---------- */
+
+  .form-card h2 {
+    font-size: 19px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  /* ---------- DESCRIPTION ---------- */
+
+  .form-description {
+    font-size: 10px;
+    line-height: 1.45;
+    margin-bottom: 14px;
+    max-width: 100%;
+  }
+
+  /* ---------- INPUTS ---------- */
+
+  .form-card input,
+  .form-card select {
+    width: 100%;
+    height: 38px;
+
+    padding: 0 11px;
+    margin: 6px 0;
+
+    border-radius: 10px;
+    font-size: 10px;
+
+    box-sizing: border-box;
+  }
+
+  .form-card select {
+    background-position:
+      calc(100% - 15px) calc(50% - 2px),
+      calc(100% - 10px) calc(50% - 2px);
+
+    background-size: 5px 5px, 5px 5px;
+  }
+
+  /* ---------- OPTIONS ---------- */
+
+  .interests-grid,
+  .semester-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+    margin: 12px 0 5px;
+  }
+
+  .form-card .option-btn {
+    min-height: 38px;
+
+    margin: 5px 0 0;
+    padding: 8px 9px;
+
+    border-radius: 10px;
+
+    font-size: 9px;
+    line-height: 1.25;
+
+    box-shadow: 0 5px 12px rgba(15, 23, 42, .10);
+  }
+
+  .interests-grid .option-btn,
+  .semester-grid .option-btn {
+    margin: 0;
+  }
+
+  /* ---------- ERROR ---------- */
+
+  .input-error {
+    font-size: 8px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin-top: -2px;
+    margin-bottom: 7px;
+  }
+
+  /* ---------- BUTTON ---------- */
+
+  .form-card button {
+    width: auto;
+    min-width: 90px;
+
+    padding: 9px 20px;
+    margin-top: 13px;
+
+    border-radius: 25px;
+    font-size: 10px;
+  }
+
+  /* ---------- SCROLLBAR ---------- */
+
+  .form-card::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .form-card::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+  }
+}
+
+
+/* ============================================================
+   VERY SMALL PHONES
+   ============================================================ */
+
+@media (max-width: 400px) {
+
+  .assessment-form {
+    padding: 6px;
+    padding-top: 15px;
+  }
+
+  .form-shell {
+    max-width: 340px;
+  }
+
+  .form-card {
+    padding: 18px 13px;
+    border-radius: 18px;
+    max-height: 80vh;
+  }
+
+  .close-form {
+    width: 27px !important;
+    height: 27px;
+    font-size: 14px !important;
+  }
+
+  .step-eyebrow {
+    font-size: 7px;
+    padding: 3px 8px;
+  }
+
+  .form-card h2 {
+    font-size: 17px;
+  }
+
+  .form-description {
+    font-size: 9px;
+  }
+
+  .form-card input,
+  .form-card select {
+    height: 35px;
+    font-size: 9px;
+  }
+
+  .interests-grid,
+  .semester-grid {
+    gap: 5px;
+  }
+
+  .form-card .option-btn {
+    min-height: 34px;
+    padding: 7px 6px;
+    font-size: 8px;
+  }
+
+  .input-error {
+    font-size: 7px;
+  }
+
+  .form-card button {
+    min-width: 80px;
+    padding: 8px 16px;
+    font-size: 9px;
+  }
+}

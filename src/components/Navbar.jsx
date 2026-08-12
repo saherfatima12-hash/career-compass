@@ -1,12 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+// import "./Navbar.css";
 
-const Navbar = ({ setShowModal, setShowLogin, user, setUser }) => {
+const Navbar = ({
+  setShowModal,
+  setShowLogin,
+  user,
+  setUser,
+  setHighlightAssessment
+}) => {
 
-
- 
-
+  const [profileOpen, setProfileOpen] = useState(false);
 
 
   useEffect(()=>{
@@ -15,10 +20,9 @@ const Navbar = ({ setShowModal, setShowLogin, user, setUser }) => {
     const checkUser = async()=>{
 
 
-     
-const savedUser = JSON.parse(
-  localStorage.getItem("user")
-);
+      const savedUser = JSON.parse(
+        localStorage.getItem("user")
+      );
 
 
       if(!savedUser){
@@ -29,7 +33,6 @@ const savedUser = JSON.parse(
       }
 
 
-
       try{
 
 
@@ -38,7 +41,6 @@ const savedUser = JSON.parse(
           `http://localhost:5000/api/users/check-user/${savedUser.email}`
 
         );
-
 
 
         if(!response.data.exists){
@@ -52,25 +54,19 @@ const savedUser = JSON.parse(
         }
 
 
-
       }
 
       catch(error){
 
-
         console.log(error);
 
-
       }
-
 
 
     };
 
 
-
     checkUser();
-
 
 
   },[]);
@@ -79,17 +75,65 @@ const savedUser = JSON.parse(
 
 
 
+  const logout = ()=>{
+
+
+    localStorage.removeItem("user");
+
+    setUser(null);
+
+    setProfileOpen(false);
+
+
+  };
+
+const handleProtectedClick = (e) => {
+
+  e.preventDefault();
+
+  if(!user){
+
+    setShowLogin(true);
+    return;
+
+  }
+
+  setHighlightAssessment(true);
+
+  setTimeout(() => {
+
+    document
+      .querySelector(".career-assessment-box")
+      ?.scrollIntoView({
+        behavior: "smooth"
+      });
+
+  }, 100);
+
+  setTimeout(() => {
+
+    setHighlightAssessment(false);
+
+  }, 4000);
+
+};
+
+
+
   return (
-    <nav>
+    
+    <nav className="navbar" data-aos="fade-down">
 
-      <div className="logo-container">
+      <div className="navbar-logo"
+       data-aos="fade-right">
 
-        <img 
+        <img
+          className="navbar-logo-img"
           src="/images/logo.png" 
           alt="Career Compass Logo"
         />
 
-        <h2>
+        <h2 className="navbar-logo-title">
           Career Compass
         </h2>
 
@@ -97,44 +141,62 @@ const savedUser = JSON.parse(
 
 
 
-      <ul>
+      <ul className="navbar-menu" data-aos="fade-left">
 
 
-        <li>
-          <NavLink to="/">
+        <li className="navbar-menu-item">
+          <NavLink to="/" className="navbar-link">
             Home
           </NavLink>
         </li>
 
 
-        <li>
-          <NavLink to="/careers">
-            Careers
-          </NavLink>
-        </li>
+        <li className="navbar-menu-item">
 
+  <NavLink 
+    to="/career" 
+    className="navbar-link"
+    onClick={handleProtectedClick}
+  >
+    Careers
+  </NavLink>
 
-        <li>
-          <NavLink to="/about">
+</li>
+        <li className="navbar-menu-item">
+          <NavLink to="/about" className="navbar-link">
             About
           </NavLink>
         </li>
 
-
-        <li>
-          <NavLink to="/contact">
-            Contact
-          </NavLink>
+        <li className="navbar-menu-item">
+          <NavLink to="/contact" className="navbar-link">
+  Contact
+</NavLink>
         </li>
 
 
+        
 
-        <li>
+
+
+
+        <li className="navbar-menu-item navbar-profile-wrapper">
+
 
         {
           user ? (
 
-            <div className="profile-circle">
+
+            <>
+
+
+            <div
+
+              className="navbar-profile-circle"
+
+              onClick={()=>setProfileOpen(!profileOpen)}
+
+            >
 
               {
                 user.name.charAt(0).toUpperCase()
@@ -143,13 +205,79 @@ const savedUser = JSON.parse(
             </div>
 
 
+
+
+
+            {
+              profileOpen &&
+
+
+              <div className="navbar-profile-popup">
+
+
+                <h3 className="navbar-profile-name">
+                  {user.name}
+                </h3>
+
+
+                <p className="navbar-profile-email">
+                  {user.email}
+                </p>
+
+
+
+                <button
+                  className="navbar-profile-btn"
+                  onClick={logout}
+                >
+
+                  Log Out
+
+                </button>
+
+
+
+               <button
+ 
+  className="navbar-profile-btn navbar-profile-btn-alt"
+
+  onClick={()=>{
+    
+ 
+    setShowLogin(true);
+
+  }}
+
+>
+Switch Account
+</button>
+
+
+
+              </div>
+
+
+            }
+
+
+            </>
+
+
           ) : (
 
+             
             <button 
-              onClick={() => setShowLogin(true)}
+              className="navbar-login-btn"
+              
+              onClick={() => 
+                    
+                setShowLogin(true)}
             >
-              Login
+
+              Log In
+
             </button>
+
 
           )
         }

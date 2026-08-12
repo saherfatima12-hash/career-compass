@@ -1,0 +1,641 @@
+/* ============================================================
+   CareerActionGuidance.css
+   Matches the existing Career.css glassmorphism design system
+   ============================================================ */
+
+.action-guidance-card {
+  animation-delay: 0.4s;
+}
+
+/* ---------------- Goal Banner ---------------- */
+
+.action-goal-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 18px 20px;
+  margin-bottom: 22px;
+
+  border-radius: 16px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.14),
+    rgba(234, 179, 8, 0.08)
+  );
+
+  border: 1px solid rgba(139, 92, 246, 0.28);
+}
+
+.action-goal-icon {
+  flex-shrink: 0;
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    var(--cp-primary),
+    var(--cp-primary-2)
+  );
+
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.3);
+}
+
+.action-goal-icon .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.action-goal-label {
+  display: block;
+
+  margin-bottom: 3px;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--cp-text-muted);
+}
+
+.action-goal-banner h3 {
+  margin: 0;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+
+  color: var(--cp-gold);
+}
+
+/* ---------------- Summary ---------------- */
+
+.action-summary {
+  margin-bottom: 10px;
+}
+
+/* ---------------- Timeline ---------------- */
+
+.action-timeline {
+  margin-top: 4px;
+}
+
+/* ---------------- Resources ---------------- */
+
+/* ---------------- Recommended Platform Blocks ---------------- */
+
+.action-resource-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.action-resource-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  position: relative;
+
+  padding: 18px 20px;
+
+  text-decoration: none;
+
+  border-radius: 16px;
+
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.action-resource-card:hover {
+  transform: translateY(-2px);
+
+  background: rgba(139, 92, 246, 0.15);
+
+  border-color: rgba(139, 92, 246, 0.45);
+}
+
+.action-resource-icon {
+  flex-shrink: 0;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(139, 92, 246, 0.25);
+}
+
+.action-resource-icon .icon {
+  width: 18px;
+  height: 18px;
+
+  color: #ffffff;
+}
+
+.action-resource-content {
+  min-width: 0;
+  padding-right: 22px;
+}
+
+.action-resource-content h4 {
+  margin: 0 0 5px;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.action-resource-content p {
+  margin: 0 0 7px;
+
+  font-size: 0.84rem;
+  line-height: 1.55;
+
+  color: #ffffff;
+}
+
+.action-resource-content span {
+  display: inline-block;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.action-resource-arrow {
+  position: absolute;
+
+  top: 20px;
+  right: 18px;
+
+  width: 16px;
+  height: 16px;
+
+  color: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.action-resource-card:hover .action-resource-arrow {
+  transform: translate(2px, -2px);
+  color: #ffffff;
+}
+/* ---------------- Lists ---------------- */
+
+.action-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.action-list-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 11px;
+
+  padding: 13px 15px;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  color: var(--cp-text-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.action-check {
+  flex-shrink: 0;
+
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(34, 197, 94, 0.14);
+
+  border: 1px solid rgba(34, 197, 94, 0.28);
+
+  color: #4ade80;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+/* ---------------- Profile Icon ---------------- */
+
+.action-profile-icon {
+  width: 16px;
+  height: 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 13px;
+}
+
+/* ---------------- Immediate Next Steps ---------------- */
+
+.action-next-step {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 14px;
+
+  margin-top: 28px;
+  padding: 20px;
+
+  border-radius: 16px;
+
+  background: rgba(139, 92, 246, 0.1);
+
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.action-next-icon {
+  flex-shrink: 0;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(139, 92, 246, 0.25);
+}
+
+.action-next-icon .icon {
+  width: 18px;
+  height: 18px;
+
+  color: #c4b5fd;
+}
+
+.action-next-step .next-step-label {
+  margin-bottom: 8px;
+}
+
+.action-next-step ul {
+  margin: 0;
+  padding-left: 18px;
+
+  color: var(--cp-text-muted);
+}
+
+.action-next-step li {
+  margin-bottom: 6px;
+
+  line-height: 1.55;
+}
+
+.action-next-step li:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 720px) {
+  .action-resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-goal-banner {
+    padding: 16px;
+  }
+
+  .action-resource-card {
+    padding: 14px;
+  }
+
+  .action-next-step {
+    padding: 16px;
+  }
+}
+/* ============================================================
+   Mobile Responsive - Compact
+   ============================================================ */
+
+@media (max-width: 720px) {
+
+  /* ---------------- Goal Banner ---------------- */
+
+  .action-goal-banner {
+    gap: 8px !important;
+    padding: 10px 11px !important;
+    margin-bottom: 12px !important;
+    border-radius: 10px !important;
+  }
+
+  .action-goal-icon {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 8px !important;
+  }
+
+  .action-goal-icon .icon {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .action-goal-label {
+    margin-bottom: 2px !important;
+    font-size: 0.55rem !important;
+    letter-spacing: 0.04em !important;
+  }
+
+  .action-goal-banner h3 {
+    font-size: 0.85rem !important;
+    line-height: 1.25 !important;
+  }
+
+
+  /* ---------------- Summary ---------------- */
+
+  .action-summary {
+    margin-bottom: 7px !important;
+    font-size: 0.72rem !important;
+    line-height: 1.4 !important;
+  }
+
+
+  /* ---------------- Timeline ---------------- */
+
+  .action-timeline {
+    margin-top: 2px !important;
+  }
+
+
+  /* ---------------- Resources ---------------- */
+
+  .action-resource-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 7px !important;
+  }
+
+  .action-resource-card {
+    gap: 8px !important;
+    padding: 10px 11px !important;
+    border-radius: 10px !important;
+  }
+
+  .action-resource-card:hover {
+    transform: none !important;
+  }
+
+  .action-resource-icon {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 7px !important;
+  }
+
+  .action-resource-icon .icon {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .action-resource-content {
+    padding-right: 16px !important;
+  }
+
+  .action-resource-content h4 {
+    margin-bottom: 2px !important;
+    font-size: 0.72rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .action-resource-content p {
+    margin-bottom: 4px !important;
+    font-size: 0.63rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .action-resource-content span {
+    font-size: 0.53rem !important;
+    letter-spacing: 0.03em !important;
+  }
+
+  .action-resource-arrow {
+    top: 13px !important;
+    right: 10px !important;
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+
+  /* ---------------- Lists ---------------- */
+
+  .action-list {
+    gap: 6px !important;
+  }
+
+  .action-list-item {
+    gap: 7px !important;
+    padding: 8px 9px !important;
+    border-radius: 9px !important;
+    font-size: 0.68rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .action-check {
+    width: 18px !important;
+    height: 18px !important;
+    font-size: 0.58rem !important;
+  }
+
+
+  /* ---------------- Profile Icon ---------------- */
+
+  .action-profile-icon {
+    width: 13px !important;
+    height: 13px !important;
+    font-size: 10px !important;
+  }
+
+
+  /* ---------------- Immediate Next Steps ---------------- */
+
+  .action-next-step {
+    gap: 8px !important;
+    margin-top: 14px !important;
+    padding: 10px 11px !important;
+    border-radius: 10px !important;
+  }
+
+  .action-next-icon {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 7px !important;
+  }
+
+  .action-next-icon .icon {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .action-next-step .next-step-label {
+    margin-bottom: 4px !important;
+    font-size: 0.7rem !important;
+  }
+
+  .action-next-step ul {
+    padding-left: 13px !important;
+    font-size: 0.65rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .action-next-step li {
+    margin-bottom: 3px !important;
+    line-height: 1.4 !important;
+  }
+
+  .action-next-step li:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+
+/* ============================================================
+   Extra Small Phones
+   ============================================================ */
+
+@media (max-width: 400px) {
+
+  .action-goal-banner {
+    gap: 6px !important;
+    padding: 8px 9px !important;
+    margin-bottom: 9px !important;
+  }
+
+  .action-goal-icon {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .action-goal-icon .icon {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  .action-goal-label {
+    font-size: 0.5rem !important;
+  }
+
+  .action-goal-banner h3 {
+    font-size: 0.76rem !important;
+  }
+
+  .action-resource-grid {
+    gap: 5px !important;
+  }
+
+  .action-resource-card {
+    gap: 6px !important;
+    padding: 8px 9px !important;
+    border-radius: 8px !important;
+  }
+
+  .action-resource-icon {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .action-resource-icon .icon {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  .action-resource-content h4 {
+    font-size: 0.67rem !important;
+  }
+
+  .action-resource-content p {
+    font-size: 0.58rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .action-resource-content span {
+    font-size: 0.49rem !important;
+  }
+
+  .action-resource-arrow {
+    top: 11px !important;
+    right: 8px !important;
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .action-list-item {
+    padding: 7px 8px !important;
+    font-size: 0.63rem !important;
+  }
+
+  .action-check {
+    width: 16px !important;
+    height: 16px !important;
+    font-size: 0.5rem !important;
+  }
+
+  .action-next-step {
+    gap: 6px !important;
+    margin-top: 10px !important;
+    padding: 8px 9px !important;
+  }
+
+  .action-next-icon {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .action-next-icon .icon {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  .action-next-step .next-step-label {
+    font-size: 0.65rem !important;
+  }
+
+  .action-next-step ul {
+    padding-left: 11px !important;
+    font-size: 0.59rem !important;
+  }
+}

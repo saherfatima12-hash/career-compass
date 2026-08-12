@@ -1,0 +1,697 @@
+{
+  "matric": {
+    "fieldPerformance": {
+      "Biology": {
+        "Average": "Your Biology fundamentals show room for growth. Focus on mastering core concepts, working through diagrams, and maintaining a consistent practice routine.",
+        "Needs Improvement": "Strengthening your Biology foundation should be a priority. Concentrate on key topics, revise daily, and practice questions regularly to build confidence."
+      },
+      "Computer Science": {
+        "Average": "Your Computer Science fundamentals need further development. Focus on programming basics, core computing concepts, and consistent hands-on practice.",
+        "Needs Improvement": "Building a stronger Computer Science foundation will help you progress. Focus on logic building, programming basics, problem solving, and small practice projects."
+      },
+      "Arts": {
+        "Average": "Sharpen your foundational concepts through regular reading and consistent practice of creative skills.",
+        "Needs Improvement": "Focus on deepening your subject understanding, improving your writing skills, and establishing a consistent study routine."
+      }
+    },
+    
+
+
+    "futureGuidance": {
+      
+      "Technology & Computers": {
+        "Continue Studies": {
+         "recommend": "ICS Physics (Primary Choice)",
+"alternativeOptions": [
+  "ICS Statistics",
+  "FSc Pre Engineering"
+],
+         "description": "Your interest in Technology and Computer Science shows potential for a technology career. ICS Physics is a strong option for programming, software engineering, and computer science. ICS Statistics is also a good choice if you are interested in AI, Data Science, and analytics. FSc Pre Engineering can be considered if you enjoy mathematics, physics, and engineering concepts",
+          "focusSubjects": ["Mathematics", "Computer Science", "Physics", "English Communication"],
+          "skills": ["Logical Thinking", "Problem Solving", "Computer Fundamentals", "Basic Programming Concepts", "Communication Skills"],
+          "roadmap": [
+            "Complete Matric with a strong grasp of Mathematics and Computer Science",
+           "Choose an Intermediate pathway according to your interests: ICS Physics for programming and software fields, ICS Statistics for AI/Data Science, or FSc Pre Engineering for engineering-oriented careers.",
+            "Explore different areas of technology to identify your interests",
+            "Learn programming concepts step by step",
+            "Build small projects once your fundamentals are solid"
+          ],
+          "nextStep": "After Intermediate, you can pursue a technology degree aligned with your interests, such as Software Engineering, Artificial Intelligence, Data Science, or Cyber Security.",
+          "futureFields": ["Software Engineering", "Artificial Intelligence", "Data Science", "Cyber Security", "Web Development"]
+        },
+        "Professional Course": {
+          "recommend": "Computer Skills and Technology Courses",
+          "description": "Start building practical computer skills to gain a deeper understanding of the technology field and develop valuable expertise alongside your studies.",
+          "focusSubjects": ["Computer Basics", "Programming Fundamentals", "Digital Skills"],
+          "skills": ["Computer Fundamentals", "Programming Basics", "Problem Solving", "Communication Skills"],
+          "roadmap": [
+            "Learn core computer concepts",
+            "Explore programming and different technology fields",
+            "Practice through small beginner projects",
+            "Gradually strengthen your technical skills"
+          ],
+          "nextStep": "Once you've built a foundation of basic skills, you can select a specialized technology field based on your interests.",
+          "futureFields": ["Web Development", "Software Development", "UI Development", "Freelancing"]
+        },
+        "Start Earning": {
+          "recommend": "Short Technology Skill Courses",
+          "description": "If you want to start earning early, focus on developing practical digital skills and gaining experience step by step.",
+          "focusSubjects": ["Computer Basics", "Digital Skills", "Communication"],
+          "skills": ["Digital Skills", "Basic Web Skills", "Graphic Design Basics", "Freelancing Skills"],
+          "roadmap": [
+            "Choose one practical digital skill to specialize in",
+            "Practice it consistently",
+            "Create small demonstration projects",
+            "Build a beginner-level portfolio"
+          ],
+          "nextStep": "With experience and further education, you can progress toward advanced technology careers.",
+          "futureFields": ["Freelancer", "Remote Worker", "Web Developer", "Digital Service Provider"]
+        }
+      },
+
+      "Creativity & Design": {
+        "Continue Studies": {
+          "recommend": "Design, Computer Related Programs or Creative Fields",
+          "description": "Your interest in creativity and design reflects strong imagination and visual thinking. Focus on exploring creative fields while building digital skills to open up future opportunities.",
+          "focusSubjects": ["Art & Design", "Computer Skills", "English Communication", "Creative Thinking"],
+          "skills": ["Creativity", "Visual Communication", "UI/UX Design Basics", "Graphic Design Basics", "Presentation Skills"],
+          "roadmap": [
+            "Complete Matric with a focus on creativity and basic computer skills",
+            "Explore design principles and digital tools",
+            "Learn foundational graphic and UI design concepts",
+            "Practice through creative projects",
+            "Build a portfolio showcasing your work"
+          ],
+          "nextStep": "After Intermediate, you can pursue fields such as UI/UX Design, Graphic Design, Digital Media, or other creative technology disciplines.",
+          "futureFields": ["UI/UX Designer", "Graphic Designer", "Product Designer", "Digital Artist", "Content Creator"]
+        },
+        "Professional Course": {
+          "recommend": "Graphic Design or UI/UX Design Courses",
+          "description": "Short creative courses can help you build practical skills and gain insight into professional design work.",
+          "focusSubjects": ["Design Principles", "Color Theory", "Digital Tools"],
+          "skills": ["Canva", "Figma", "Graphic Design", "Visual Creativity", "Social Media Design"],
+          "roadmap": [
+            "Learn core design principles",
+            "Practice using industry-standard design tools",
+            "Create small design projects",
+            "Build a beginner-level portfolio"
+          ],
+          "nextStep": "As your design skills develop, you can continue advanced learning or begin freelance creative work.",
+          "futureFields": ["Freelance Designer", "UI Designer", "Graphic Designer", "Content Creator"]
+        },
+        "Start Earning": {
+          "recommend": "Creative Digital Skills",
+          "description": "Start earning by developing practical creative skills and offering digital services.",
+          "focusSubjects": ["Graphic Design", "Digital Tools", "Communication"],
+          "skills": ["Canva Design", "Social Media Design", "Basic Video Editing", "Freelancing Skills"],
+          "roadmap": [
+            "Learn one creative skill in depth",
+            "Practice it daily",
+            "Create sample work for your portfolio",
+            "Offer beginner-level services"
+          ],
+          "nextStep": "With experience, you can move toward professional design careers or building a creative business.",
+          "futureFields": ["Freelancer", "Graphic Designer", "Social Media Designer", "Digital Creator"]
+        }
+      },
+
+      "Science & Nature": {
+        "Continue Studies": {
+          "recommend": "FSc Pre Medical or General Science Pathway",
+          "description": "Your interest in Science and Nature suggests a strong fit for understanding living systems, the natural world, and how things work — whether that leads toward medicine, biology, or broader scientific research. This is a great foundation for helping others through medical and scientific fields.",
+          "focusSubjects": ["Biology", "Chemistry", "Physics", "English Communication"],
+          "skills": ["Scientific Thinking", "Research Skills", "Observation Skills", "Critical Thinking", "Communication Skills"],
+          "roadmap": [
+            "Complete Matric with a strong grasp of Biology and general science",
+            "Choose FSc Pre Medical for Intermediate if healthcare interests you most",
+            "Deepen your scientific understanding through reading and observation",
+            "Explore different science and healthcare professions",
+            "Prepare for higher medical or science education"
+          ],
+          "nextStep": "After Intermediate, you can pursue a medical, healthcare, or general science-related degree aligned with your interests.",
+          "futureFields": ["Doctor", "Medical Specialist", "Pharmacist", "Biotechnologist", "Environmental Scientist"]
+        },
+        "Professional Course": {
+          "recommend": "Healthcare & Science Related Professional Courses",
+          "description": "Professional healthcare and science courses can help you build practical knowledge and skills relevant to health and science-based services.",
+          "focusSubjects": ["Biology Basics", "Healthcare Fundamentals", "Human Body Knowledge"],
+          "skills": ["First Aid", "Patient Care", "Medical Terminology", "Communication Skills"],
+          "roadmap": [
+            "Learn healthcare and general science fundamentals",
+            "Develop practical medical or lab skills",
+            "Gain knowledge through structured training",
+            "Explore available healthcare and science career paths"
+          ],
+          "nextStep": "You can continue your education or specialize in a healthcare or science field aligned with your goals.",
+          "futureFields": ["Healthcare Assistant", "Medical Technician", "Lab Assistant", "Health Worker"]
+        },
+        "Start Earning": {
+          "recommend": "Basic Healthcare & Science Skill Courses",
+          "description": "Begin with foundational healthcare or lab skills while continuing your education and gaining hands-on experience.",
+          "focusSubjects": ["Basic Biology", "Health & Safety", "Healthcare Skills"],
+          "skills": ["First Aid", "Patient Support", "Health Awareness", "Communication"],
+          "roadmap": [
+            "Learn essential healthcare or lab skills",
+            "Practice through structured training",
+            "Strengthen your communication skills",
+            "Gain hands-on practical experience"
+          ],
+          "nextStep": "Further education can help you advance toward more specialized healthcare or science professions.",
+          "futureFields": ["Medical Assistant", "Healthcare Worker", "Health Service Provider", "Lab Technician"]
+        }
+      },
+
+      "Sports & Physical Activities": {
+        "Continue Studies": {
+          "recommend": "FSc / General Studies with a Sports Science Focus",
+          "description": "Your interest in sports and physical activity points toward discipline, teamwork, and physical fitness — strengths that can grow into a career in sports science, coaching, or physical education. At the Matric stage, keep your academics well-rounded while staying actively involved in sports.",
+          "focusSubjects": ["Physical Education", "Biology", "English Communication", "General Science"],
+          "skills": ["Physical Fitness", "Discipline & Time Management", "Teamwork", "Leadership on the Field", "Basic Sports Nutrition Awareness"],
+          "roadmap": [
+            "Complete Matric while staying consistently active in sports or physical training",
+            "Choose an Intermediate program that keeps your science options open (Biology helps)",
+            "Explore different sports disciplines and coaching basics",
+            "Learn fundamentals of fitness, nutrition, and injury prevention",
+            "Take part in inter-school or club-level competitions to build experience"
+          ],
+          "nextStep": "After Intermediate, you can pursue degrees in Sports Science, Physical Education, Physiotherapy, or Sports Management.",
+          "futureFields": ["Sports Scientist", "Physical Education Teacher", "Professional Athlete", "Sports Coach", "Physiotherapist"]
+        },
+        "Professional Course": {
+          "recommend": "Fitness & Coaching Certification Courses",
+          "description": "Short certification courses in fitness and coaching can help you turn your passion for sports into practical, marketable skills early.",
+          "focusSubjects": ["Fitness Fundamentals", "Basic Human Anatomy", "Sports Rules & Techniques"],
+          "skills": ["Fitness Training", "Coaching Basics", "Communication", "Sports First Aid"],
+          "roadmap": [
+            "Learn fitness training fundamentals",
+            "Study basic human anatomy and movement",
+            "Practice coaching younger or beginner players",
+            "Earn a beginner-level fitness or coaching certificate"
+          ],
+          "nextStep": "With more experience and certifications, you can work toward becoming a professional coach or trainer.",
+          "futureFields": ["Fitness Trainer", "Junior Coach", "Sports Assistant", "Gym Instructor"]
+        },
+        "Start Earning": {
+          "recommend": "Basic Fitness Training / Coaching Skills",
+          "description": "Start earning by offering basic fitness guidance or coaching services while continuing to build your expertise.",
+          "focusSubjects": ["Fitness Basics", "Sports Rules", "Communication"],
+          "skills": ["Basic Training Techniques", "Client Communication", "Scheduling & Discipline"],
+          "roadmap": [
+            "Learn one sport or fitness area in depth",
+            "Practice coaching or training others informally",
+            "Build a small track record of clients or trainees",
+            "Gradually pursue certifications to formalize your skills"
+          ],
+          "nextStep": "With experience and certification, you can progress toward professional coaching or sports management roles.",
+          "futureFields": ["Freelance Trainer", "Sports Assistant", "Gym Instructor", "Community Coach"]
+        }
+      },
+
+      "Communication & Social Work": {
+        "Continue Studies": {
+          "recommend": "FA / Humanities Pathway",
+          "description": "Your interest in communication and helping others suggests strong potential in fields built around expression, empathy, and community impact. Focus now on strengthening your language and interpersonal skills while exploring different ways people build careers around communication and service.",
+          "focusSubjects": ["English / Languages", "Social Studies", "Communication Skills", "Arts"],
+          "skills": ["Public Speaking", "Writing", "Active Listening", "Empathy", "Community Engagement"],
+          "roadmap": [
+            "Complete Matric with a strong grasp of language and social studies",
+            "Choose FA in Intermediate to build a communication/social sciences pathway",
+            "Practice writing and public speaking regularly",
+            "Get involved in community service or school communication activities",
+            "Explore fields like journalism, social work, and psychology to find your fit"
+          ],
+          "nextStep": "After Intermediate, you can pursue degrees in Mass Communication, Social Work, Psychology, or Media Studies.",
+          "futureFields": ["Journalist", "Social Worker", "Public Relations Officer", "Content Writer", "Community Development Officer"]
+        },
+        "Professional Course": {
+          "recommend": "Communication & Media Skill Courses",
+          "description": "Short courses in communication and media can help you build practical, real-world skills in writing, speaking, and community engagement.",
+          "focusSubjects": ["Writing Basics", "Public Speaking", "Media Literacy"],
+          "skills": ["Content Writing", "Public Speaking", "Basic Social Media Skills", "Interpersonal Communication"],
+          "roadmap": [
+            "Learn the basics of clear writing and speaking",
+            "Practice communicating ideas in front of others",
+            "Explore basic social media and content creation tools",
+            "Volunteer for community or school communication projects"
+          ],
+          "nextStep": "As your skills grow, you can pursue further study or entry-level roles in media, PR, or social work.",
+          "futureFields": ["Content Writer", "Community Volunteer Coordinator", "Junior Reporter", "Social Media Assistant"]
+        },
+        "Start Earning": {
+          "recommend": "Content Creation & Communication Skills",
+          "description": "Start earning by developing practical writing or content skills that let you offer communication-based services early.",
+          "focusSubjects": ["Writing", "Digital Communication", "Basic Media Tools"],
+          "skills": ["Content Writing", "Basic Video/Audio Skills", "Social Media Basics", "Freelancing Skills"],
+          "roadmap": [
+            "Choose one communication skill to focus on (writing, hosting, content creation)",
+            "Practice it consistently",
+            "Create sample work for a small portfolio",
+            "Offer beginner-level freelance communication services"
+          ],
+          "nextStep": "With experience, you can move toward more advanced media, PR, or social work career paths.",
+          "futureFields": ["Freelance Writer", "Content Creator", "Social Media Assistant", "Community Volunteer"]
+        }
+      },
+
+      "Business & Money": {
+        "Continue Studies": {
+          "recommend": "I.Com / Business Studies Pathway",
+          "description": "Your interest in business and money suggests a natural inclination toward trade, planning, and entrepreneurship. Focus now on building numerical confidence and basic business awareness before choosing a specialized path.",
+          "focusSubjects": ["Mathematics", "Business Studies Basics", "English Communication", "Social Studies"],
+          "skills": ["Basic Financial Literacy", "Numerical Skills", "Communication", "Planning", "Negotiation Basics"],
+          "roadmap": [
+            "Complete Matric with a solid grasp of Mathematics",
+            "Choose I.Com in Intermediate to build a business/commerce pathway",
+            "Learn the basics of budgeting, saving, and how businesses operate",
+            "Follow simple business news to build real-world awareness",
+            "Try a small saving, trading, or mini-business exercise for hands-on experience"
+          ],
+          "nextStep": "After Intermediate, you can pursue degrees such as BBA, B.Com, ACCA, or other business and finance programs.",
+          "futureFields": ["Entrepreneur", "Accountant", "Business Manager", "Marketing Professional", "Financial Analyst"]
+        },
+        "Professional Course": {
+          "recommend": "Basic Business & Finance Skill Courses",
+          "description": "Short business and finance courses can help you build practical skills in money management and basic commerce.",
+          "focusSubjects": ["Basic Accounting", "Business Fundamentals", "Communication"],
+          "skills": ["Basic Bookkeeping", "Budgeting", "Communication", "Simple Sales Skills"],
+          "roadmap": [
+            "Learn basic accounting and budgeting concepts",
+            "Understand how small businesses are run",
+            "Practice simple financial planning exercises",
+            "Explore beginner-level business or trade skills"
+          ],
+          "nextStep": "As your business knowledge grows, you can pursue further study or entry-level roles in business or trade.",
+          "futureFields": ["Sales Assistant", "Junior Bookkeeper", "Small Business Helper", "Retail Assistant"]
+        },
+        "Start Earning": {
+          "recommend": "Small Business / Trading Skills",
+          "description": "Start earning by developing practical trading, sales, or small-business skills that let you gain real experience early.",
+          "focusSubjects": ["Basic Numeracy", "Communication", "Business Basics"],
+          "skills": ["Basic Sales Skills", "Money Management", "Customer Communication", "Simple Record Keeping"],
+          "roadmap": [
+            "Choose one small trade or product/service to start with",
+            "Practice basic budgeting and record keeping",
+            "Build initial customer or client relationships",
+            "Gradually reinvest earnings to grow your skills and offering"
+          ],
+          "nextStep": "With experience, you can progress toward running a larger business or pursuing formal business education.",
+          "futureFields": ["Small Business Owner", "Trader", "Freelance Seller", "Sales Representative"]
+        }
+      }
+    }
+  },
+
+
+  "intermediate": {
+    "fieldPerformance": {
+      "FSc Pre Medical": {
+        "Average": "Your grasp of medical-track subjects is developing but needs sharpening — a stronger command of Biology and Chemistry is essential for entry tests ahead.",
+        "Needs Improvement": "Pre-Medical subjects demand consistent daily effort. Prioritize Biology and Chemistry fundamentals now, since entry tests will test depth, not just memorization."
+      },
+      "FSc Pre Engineering": {
+        "Average": "Your Mathematics and Physics fundamentals show potential but need more consistent practice, especially with numerical problem-solving.",
+        "Needs Improvement": "Engineering entry tests are numerically demanding. Focus on daily Mathematics and Physics practice to close the gap before your tests."
+      },
+      "ICS Physics": {
+        "Average": "Your programming and computing fundamentals are developing — more hands-on practice will help concepts stick, and Physics/Mathematics practice will strengthen your logical base.",
+        "Needs Improvement": "Computer Science requires consistent logical practice. Dedicate regular time to programming basics and Mathematics to build a stronger foundation."
+      },
+      "ICS Statistics": {
+        "Average": "Your grasp of statistics and data-related concepts is developing — regular practice with numerical and data problems will help concepts stick.",
+        "Needs Improvement": "Statistics rewards consistent numerical practice. Dedicate regular time to core statistics and Mathematics concepts to build a stronger foundation."
+      },
+      "I.Com": {
+        "Average": "Your grasp of accounting and business concepts is developing — regular numerical practice will strengthen your confidence.",
+        "Needs Improvement": "Commerce subjects reward consistency. Revise accounting fundamentals daily and practice numerical problems to build a stronger foundation."
+      },
+      "FA": {
+        "Average": "Your grasp of language, literature, and social science concepts is developing — regular reading and writing practice will strengthen your confidence.",
+        "Needs Improvement": "Humanities subjects reward consistent reading and writing. Revise core concepts daily and practice essay writing to build a stronger foundation."
+      }
+    },
+
+    "subjectGuidance": {
+      "FSc Pre Medical": {
+        "recommend": "Medical & Healthcare Pathway",
+        "description": "As a Pre-Medical student, you're on a path toward one of the most respected and impactful career fields. The next few years should focus on deepening your scientific understanding while preparing seriously for medical entry tests.",
+        "focusSubjects": ["Biology", "Chemistry", "Physics", "English"],
+        "skills": ["Scientific Reasoning", "Memorization Techniques", "Time Management", "MCQ Solving", "Analytical Thinking"],
+        "roadmap": [
+          "Build airtight command of Biology and Chemistry fundamentals",
+          "Start entry test preparation (MDCAT/equivalent) at least a year in advance",
+          "Practice MCQs under timed conditions every week",
+          "Explore different healthcare specializations to find your interest",
+          "Shortlist target medical universities and their admission criteria"
+        ],
+        "nextStep": "After Intermediate, you'll typically sit for a medical entry test before applying to MBBS, BDS, or allied health degree programs.",
+        "futureFields": ["Doctor (MBBS)", "Dentist (BDS)", "Pharm-D", "Medical Researcher", "Allied Health Professions"]
+      },
+
+      "FSc Pre Engineering": {
+        "recommend": "Engineering & Technical Pathway",
+        "description": "As a Pre-Engineering student, your strength lies in applying Mathematics and Physics to real-world problems. Focus now on building numerical fluency and preparing for engineering entry tests.",
+        "focusSubjects": ["Mathematics", "Physics", "Chemistry", "English"],
+        "skills": ["Numerical Problem Solving", "Technical Reasoning", "Spatial Thinking", "Time Management", "Entry Test Strategy"],
+        "roadmap": [
+          "Strengthen core Mathematics and Physics concepts thoroughly",
+          "Begin engineering entry test preparation (ECAT/equivalent) early",
+          "Practice numerical-heavy past papers regularly",
+          "Explore different engineering disciplines through videos and articles",
+          "Shortlist target engineering universities and their requirements"
+        ],
+        "nextStep": "After Intermediate, you'll typically sit for an engineering entry test before choosing a specific engineering discipline at university.",
+        "futureFields": ["Mechanical Engineering", "Electrical Engineering", "Civil Engineering", "Software Engineering", "Chemical Engineering"]
+      },
+
+      "ICS Physics": {
+        "recommend": "Computer Science & Technology Pathway",
+        "description": "As an ICS Physics student, you already have a head start on the technology field, with the added benefit of a strong Physics/Mathematics base. This is the ideal time to build real programming skills alongside your coursework, rather than waiting until university.",
+        "focusSubjects": ["Programming Fundamentals", "Mathematics", "Physics", "Computer Science"],
+        "skills": ["Programming Logic", "Problem Solving", "Web Development Basics", "Computer Fundamentals", "Mathematical Reasoning"],
+        "roadmap": [
+          "Learn a beginner-friendly programming language (Python or JavaScript)",
+          "Build small practice projects to reinforce programming logic",
+          "Strengthen Mathematics and Physics — they underpin most computer science degrees",
+          "Explore web development basics (HTML, CSS, and simple JS projects)",
+          "Research Computer Science, Software Engineering, and AI degree options"
+        ],
+        "nextStep": "After Intermediate, you can apply directly to Computer Science, Software Engineering, Data Science, or related university degrees — most don't require a separate entry test.",
+        "futureFields": ["Software Engineer", "Web Developer", "Data Scientist", "AI/ML Engineer", "Cyber Security Specialist"]
+      },
+
+      "ICS Statistics": {
+        "recommend": "Data & Statistics-Focused Technology Pathway",
+        "description": "As an ICS Statistics student, you combine computing fundamentals with a strong footing in numerical and statistical reasoning. This mix is a natural fit for data-focused technology careers, where making sense of numbers is just as important as writing code.",
+        "focusSubjects": ["Statistics", "Mathematics", "Programming Fundamentals", "Computer Science"],
+        "skills": ["Statistical Reasoning", "Data Analysis Basics", "Programming Logic", "Problem Solving", "Mathematical Reasoning"],
+        "roadmap": [
+          "Strengthen core Statistics and Mathematics concepts",
+          "Learn a beginner-friendly programming language (Python is a strong fit for data work)",
+          "Practice analyzing simple datasets using spreadsheets or beginner tools",
+          "Explore the basics of data visualization and interpretation",
+          "Research Data Science, Statistics, and Actuarial Science degree options"
+        ],
+        "nextStep": "After Intermediate, you can pursue degrees in Data Science, Statistics, Computer Science, or Actuarial Science, depending on how strongly you lean toward numbers versus programming.",
+        "futureFields": ["Data Analyst", "Data Scientist", "Actuarial Analyst", "Statistician", "Software Developer"]
+      },
+
+      "I.Com": {
+        "recommend": "Business, Finance & Commerce Pathway",
+        "description": "As a Commerce student, you're building the foundation for business, finance, and entrepreneurial careers. Focus now on strengthening accounting and analytical fundamentals while exploring business exposure early.",
+        "focusSubjects": ["Accounting", "Economics", "Business Studies", "English"],
+        "skills": ["Financial Literacy", "Analytical Thinking", "Communication", "Basic Excel", "Business Awareness"],
+        "roadmap": [
+          "Build a strong grip on accounting and bookkeeping fundamentals",
+          "Study basic economics and how markets/businesses operate",
+          "Follow real business news to build practical awareness",
+          "Try a small entrepreneurial or freelance project for hands-on exposure",
+          "Research Business, Finance, and Accounting degree programs (e.g. BBA, ACCA)"
+        ],
+        "nextStep": "After Intermediate, you can pursue a BBA, B.Com, ACCA, or related business/finance degree depending on your specific interest.",
+        "futureFields": ["Business Analyst", "Accountant", "Financial Analyst", "Entrepreneur", "Marketing Professional"]
+      },
+
+      "FA": {
+        "recommend": "Humanities, Media & Social Sciences Pathway",
+        "description": "As an FA student, you're building a foundation in language, ideas, and society — a strong base for careers in media, education, design, and the social sciences. Focus now on strengthening your writing, critical thinking, and exploring which humanities field genuinely excites you.",
+        "focusSubjects": ["Literature / English", "Social Studies", "General Knowledge", "Languages"],
+        "skills": ["Writing", "Critical Thinking", "Communication", "Research Skills", "Creativity"],
+        "roadmap": [
+          "Build strong reading, writing, and essay skills",
+          "Explore different humanities fields — media, design, social work, teaching",
+          "Practice public speaking and structured argument writing",
+          "Get involved in a school magazine, debate club, or community project",
+          "Research Media Studies, Social Sciences, Design, or Education degree programs"
+        ],
+        "nextStep": "After Intermediate, you can pursue degrees in Mass Communication, Social Sciences, Fine Arts/Design, or Education, depending on your specific interest.",
+        "futureFields": ["Journalist", "Social Scientist", "Graphic Designer", "Teacher", "Content Strategist"]
+      }
+    }
+  },
+
+  "bachelor": {
+    "careerGuidance": {
+      "Computer Science": {
+        "Software Developer": {
+          "recommend": "Software Development Specialization",
+          "description": "You're aiming to become a professional software developer. The path forward is about deepening your programming expertise and proving it through real, shippable work.",
+          "focusSubjects": ["Data Structures & Algorithms", "System Design", "Databases", "Software Engineering Practices"],
+          "skills": ["Full-Stack Development", "Git/Version Control", "API Design", "Testing & Debugging", "Team Collaboration"],
+          "roadmap": [
+            "Master one backend and one frontend stack thoroughly",
+            "Contribute to open-source or build 2–3 substantial full-stack projects",
+            "Complete at least one internship or freelance client project",
+            "Practice technical interview problems (DSA) consistently",
+            "Publish a polished portfolio with live project links"
+          ],
+          "nextStep": "Start applying for internships and junior developer roles in your final year, backed by a strong GitHub portfolio.",
+          "futureFields": ["Frontend Developer", "Backend Developer", "Full-Stack Engineer", "Software Engineer"]
+        },
+
+        "AI/ML Engineer": {
+          "recommend": "AI & Machine Learning Specialization",
+          "description": "You're pursuing one of the most in-demand and rapidly evolving fields in tech. Focus on both the mathematical foundations and hands-on model-building experience employers look for.",
+          "focusSubjects": ["Linear Algebra & Statistics", "Machine Learning", "Deep Learning", "Data Structures & Algorithms"],
+          "skills": ["Python", "TensorFlow/PyTorch", "Data Preprocessing", "Model Evaluation", "Research Reading"],
+          "roadmap": [
+            "Solidify statistics, linear algebra, and probability foundations",
+            "Complete hands-on ML projects (classification, NLP, or computer vision)",
+            "Participate in Kaggle competitions or similar challenges",
+            "Read and reproduce results from key research papers in your interest area",
+            "Build a portfolio showcasing end-to-end ML projects"
+          ],
+          "nextStep": "Target AI/ML internships or research assistantships, and consider contributing to open-source ML projects.",
+          "futureFields": ["Machine Learning Engineer", "Data Scientist", "AI Research Assistant", "NLP Engineer"]
+        },
+
+        "Data Scientist": {
+          "recommend": "Data Science Specialization",
+          "description": "Your goal combines statistics, programming, and business insight. Focus on building a portfolio that shows you can turn raw data into real decisions.",
+          "focusSubjects": ["Statistics & Probability", "Databases (SQL)", "Machine Learning", "Data Visualization"],
+          "skills": ["Python/R", "SQL", "Data Visualization (Tableau/PowerBI)", "Statistical Analysis", "Storytelling with Data"],
+          "roadmap": [
+            "Master SQL and one data science language (Python or R)",
+            "Complete end-to-end data analysis projects using real public datasets",
+            "Build dashboards that communicate insights clearly",
+            "Take on a data-related internship or freelance analytics project",
+            "Compile a portfolio combining analysis, visuals, and business takeaways"
+          ],
+          "nextStep": "Apply for data analyst or junior data scientist roles, or internships at data-driven companies.",
+          "futureFields": ["Data Analyst", "Data Scientist", "Business Intelligence Analyst", "Data Engineer"]
+        },
+
+        "Cyber Security Specialist": {
+          "recommend": "Cyber Security Specialization",
+          "description": "You're heading into one of the most critical technology fields. Build both defensive knowledge and hands-on, hackable-lab experience to stand out.",
+          "focusSubjects": ["Networking", "Operating Systems", "Cryptography", "Ethical Hacking"],
+          "skills": ["Network Security", "Penetration Testing Basics", "Linux Proficiency", "Security Tools (Wireshark, Nmap)", "Incident Response Awareness"],
+          "roadmap": [
+            "Build strong networking and operating systems fundamentals",
+            "Practice in legal, sandboxed environments (e.g. TryHackMe, HackTheBox)",
+            "Earn a foundational certification (e.g. CompTIA Security+ track)",
+            "Take part in Capture-the-Flag (CTF) competitions",
+            "Document your learning and labs in a public portfolio/blog"
+          ],
+          "nextStep": "Pursue cyber security internships or SOC analyst entry roles, backed by certifications and CTF experience.",
+          "futureFields": ["Security Analyst", "Penetration Tester", "SOC Analyst", "Security Consultant"]
+        },
+
+        "Freelancer": {
+          "recommend": "Freelance Technology Career Path",
+          "description": "You're aiming for independence and flexibility through freelance work. Success here depends on a strong portfolio, a niche specialty, and consistent client-facing skills.",
+          "focusSubjects": ["Client Communication", "Project Scoping", "One Core Technical Skill", "Portfolio Presentation"],
+          "skills": ["Time Management", "Client Communication", "Pricing & Proposals", "Niche Technical Expertise", "Self-Marketing"],
+          "roadmap": [
+            "Pick one in-demand technical niche and go deep (e.g. web dev, design, WordPress)",
+            "Build 3–5 portfolio projects that clearly demonstrate that niche",
+            "Set up profiles on freelance platforms with a focused offer",
+            "Deliver a few smaller projects to build reviews and confidence",
+            "Gradually raise your rates as your portfolio and testimonials grow"
+          ],
+          "nextStep": "Start with smaller freelance gigs to build reputation, then move toward higher-value, longer-term client work.",
+          "futureFields": ["Freelance Developer", "Freelance Designer", "Independent Consultant", "Contract Specialist"]
+        },
+
+        "Startup Founder": {
+          "recommend": "Entrepreneurial Technology Path",
+          "description": "You're aiming to build something of your own. Focus on combining technical execution with real validation of problems worth solving.",
+          "focusSubjects": ["Product Thinking", "Basic Business Fundamentals", "Rapid Prototyping", "Technical Execution"],
+          "skills": ["MVP Building", "Market Validation", "Pitching", "Basic Finance/Business Model Design", "Resilience & Iteration"],
+          "roadmap": [
+            "Identify a real problem you're personally motivated to solve",
+            "Build a minimum viable product (MVP) quickly, without over-engineering",
+            "Talk to real potential users before building further",
+            "Iterate based on feedback and look for small early traction",
+            "Explore incubators, competitions, or small funding opportunities"
+          ],
+          "nextStep": "Focus on validating your idea with real users before investing heavily in scaling.",
+          "futureFields": ["Startup Founder", "Product Manager", "Technical Co-Founder", "Indie Hacker"]
+        }
+      },
+
+      "Engineering": {
+        "Industry Engineer": {
+          "recommend": "Industry Engineering Track",
+          "description": "You're preparing to enter the engineering workforce directly. Employers will look for hands-on technical skill alongside your theoretical knowledge.",
+          "focusSubjects": ["Core Engineering Subjects", "Industry Standards & Codes", "Technical Tools (CAD/Simulation)", "Safety Practices"],
+          "skills": ["CAD/Simulation Software", "Technical Documentation", "Problem Solving", "Team Collaboration", "Industry Tools"],
+          "roadmap": [
+            "Master the core software/tools used in your specific engineering discipline",
+            "Complete at least one meaningful industrial internship",
+            "Work on practical, hands-on projects beyond coursework",
+            "Understand relevant industry standards and safety codes",
+            "Build a portfolio of technical projects and reports"
+          ],
+          "nextStep": "Target internships and entry-level engineering roles in your final year, using your project portfolio as proof of practical skill.",
+          "futureFields": ["Field Engineer", "Design Engineer", "Maintenance Engineer", "Industrial Engineer"]
+        },
+
+        "Research & Development": {
+          "recommend": "R&D and Research Track",
+          "description": "You're drawn to innovation and deep technical exploration. Focus on developing strong research fundamentals alongside your engineering base.",
+          "focusSubjects": ["Advanced Mathematics", "Research Methodology", "Specialized Core Subjects", "Technical Writing"],
+          "skills": ["Research Design", "Data Analysis", "Technical Writing", "Critical Thinking", "Literature Review"],
+          "roadmap": [
+            "Assist a professor or lab with an ongoing research project",
+            "Learn how to read and critically evaluate research papers",
+            "Complete a substantial final-year research project or thesis",
+            "Present your work at a student conference or symposium if possible",
+            "Explore relevant postgraduate research opportunities"
+          ],
+          "nextStep": "Consider pursuing a Master's or research assistantship in your specialization area after graduation.",
+          "futureFields": ["Research Engineer", "R&D Specialist", "Graduate Researcher", "Innovation Analyst"]
+        },
+
+        "Technical Specialist": {
+          "recommend": "Technical Specialization Track",
+          "description": "You're aiming to become a deep expert in a specific technical area rather than a generalist. Depth and certification will set you apart.",
+          "focusSubjects": ["Chosen Specialization Area", "Advanced Tools & Software", "Technical Standards", "Applied Projects"],
+          "skills": ["Deep Technical Expertise", "Specialized Software Tools", "Troubleshooting", "Documentation", "Continuous Learning"],
+          "roadmap": [
+            "Identify the specific technical niche you want to specialize in",
+            "Pursue relevant certifications or specialized coursework",
+            "Take on projects that let you go deep in that one area",
+            "Build relationships with professionals already working in that niche",
+            "Document your specialized project work as proof of expertise"
+          ],
+          "nextStep": "Target roles and internships explicitly tied to your chosen specialization rather than general engineering positions.",
+          "futureFields": ["Technical Consultant", "Specialist Engineer", "Systems Expert", "Applications Engineer"]
+        },
+
+        "Project Management": {
+          "recommend": "Engineering Project Management Track",
+          "description": "You're aiming to lead engineering projects rather than only execute technical tasks. Build both technical credibility and management fundamentals.",
+          "focusSubjects": ["Project Management Fundamentals", "Core Engineering Subjects", "Communication", "Risk Management"],
+          "skills": ["Project Planning", "Team Leadership", "Budgeting & Scheduling", "Stakeholder Communication", "Risk Assessment"],
+          "roadmap": [
+            "Build solid technical credibility in your core engineering area first",
+            "Learn project management fundamentals (timelines, budgets, scope)",
+            "Take a leadership or coordination role in a student or academic project",
+            "Consider an introductory project management certification",
+            "Practice clear written and verbal communication with different stakeholders"
+          ],
+          "nextStep": "Look for entry-level roles that combine technical work with coordination responsibilities, as a stepping stone to full PM roles.",
+          "futureFields": ["Project Coordinator", "Assistant Project Manager", "Site Engineer", "Program Analyst"]
+        },
+
+        "Entrepreneurship": {
+          "recommend": "Engineering Entrepreneurship Track",
+          "description": "You're aiming to build your own technical venture. Combine your engineering skill with product thinking and real market validation.",
+          "focusSubjects": ["Product Design Thinking", "Basic Business Fundamentals", "Prototyping", "Core Engineering Subjects"],
+          "skills": ["Prototyping", "Market Validation", "Pitching", "Resourcefulness", "Cross-Disciplinary Collaboration"],
+          "roadmap": [
+            "Identify a real technical problem worth solving in your domain",
+            "Build a low-cost prototype to test your idea",
+            "Get feedback from real potential users or industry contacts",
+            "Explore university incubators, competitions, or grants",
+            "Iterate on your prototype based on real-world feedback"
+          ],
+          "nextStep": "Focus on validating demand for your idea before investing heavily in manufacturing or scaling.",
+          "futureFields": ["Startup Founder", "Product Designer", "Technical Entrepreneur", "Innovation Lead"]
+        }
+      },
+
+      "Business": {
+        "Business Manager": {
+          "recommend": "Business Management Track",
+          "description": "You're preparing for a leadership and management-focused career. Build both operational know-how and people-management skills.",
+          "focusSubjects": ["Organizational Behavior", "Operations Management", "Business Strategy", "Communication"],
+          "skills": ["Leadership", "Team Management", "Decision Making", "Communication", "Process Improvement"],
+          "roadmap": [
+            "Take on leadership roles in student societies or group projects",
+            "Complete an internship with operational or managerial exposure",
+            "Study real case studies of business decision-making",
+            "Practice presenting and defending business proposals",
+            "Build a professional network through campus and industry events"
+          ],
+          "nextStep": "Target management trainee programs or operations-focused entry roles after graduation.",
+          "futureFields": ["Operations Manager", "Management Trainee", "Team Lead", "Business Development Manager"]
+        },
+
+        "Entrepreneur": {
+          "recommend": "Business Entrepreneurship Track",
+          "description": "You're aiming to build your own business rather than work for one. Focus on validating real ideas and developing practical business execution skills.",
+          "focusSubjects": ["Entrepreneurship Fundamentals", "Marketing Basics", "Finance Basics", "Business Strategy"],
+          "skills": ["Idea Validation", "Basic Financial Planning", "Pitching", "Networking", "Resilience"],
+          "roadmap": [
+            "Identify a real problem you understand deeply and want to solve",
+            "Test your idea on a small scale before investing heavily",
+            "Learn basic financial planning and pricing strategy",
+            "Pitch your idea for feedback at competitions or to mentors",
+            "Iterate your business model based on real customer feedback"
+          ],
+          "nextStep": "Start small, validate demand, and reinvest early revenue into gradual, sustainable growth.",
+          "futureFields": ["Startup Founder", "Small Business Owner", "E-Commerce Entrepreneur", "Consultant"]
+        },
+
+        "Marketing Specialist": {
+          "recommend": "Marketing Specialization Track",
+          "description": "You're aiming to build a career in marketing. Focus on both creative and analytical marketing skills, since modern marketing blends both.",
+          "focusSubjects": ["Marketing Principles", "Consumer Behavior", "Digital Marketing", "Business Communication"],
+          "skills": ["Digital Marketing", "Content Creation", "Marketing Analytics", "Branding", "Communication"],
+          "roadmap": [
+            "Learn digital marketing fundamentals (SEO, social media, ads)",
+            "Run a small real campaign — even for a student project or small business",
+            "Learn to read and interpret basic marketing analytics",
+            "Build a portfolio showcasing campaigns, content, and results",
+            "Complete a marketing-focused internship if possible"
+          ],
+          "nextStep": "Apply for marketing internships or junior marketing executive roles, backed by a hands-on campaign portfolio.",
+          "futureFields": ["Digital Marketer", "Brand Executive", "Social Media Manager", "Marketing Analyst"]
+        },
+
+        "Finance Professional": {
+          "recommend": "Finance Specialization Track",
+          "description": "You're aiming for a career in finance. Build strong analytical fundamentals and get comfortable working with real financial data.",
+          "focusSubjects": ["Financial Accounting", "Corporate Finance", "Economics", "Financial Modeling"],
+          "skills": ["Financial Modeling", "Excel Proficiency", "Analytical Thinking", "Attention to Detail", "Financial Reporting"],
+          "roadmap": [
+            "Master Excel-based financial modeling fundamentals",
+            "Practice analyzing real company financial statements",
+            "Consider an introductory finance certification (e.g. CFA Level 1 track)",
+            "Complete a finance or accounting-focused internship",
+            "Build a small portfolio of financial analysis projects"
+          ],
+          "nextStep": "Target finance internships or entry-level analyst roles, supported by strong Excel and analytical skills.",
+          "futureFields": ["Financial Analyst", "Investment Banking Analyst", "Accountant", "Risk Analyst"]
+        },
+
+        "Business Analyst": {
+          "recommend": "Business Analytics Track",
+          "description": "You're aiming to bridge business needs with data-driven decisions. Focus on analytical tools and clear communication of insights.",
+          "focusSubjects": ["Business Analytics", "Statistics", "Databases (SQL)", "Business Communication"],
+          "skills": ["Data Analysis", "SQL", "Excel/PowerBI", "Requirements Gathering", "Communication"],
+          "roadmap": [
+            "Learn SQL and one data visualization tool (PowerBI/Tableau)",
+            "Practice translating business questions into data queries",
+            "Work on real or simulated business analysis case studies",
+            "Complete a business analytics-focused internship",
+            "Build a portfolio combining analysis and clear business recommendations"
+          ],
+          "nextStep": "Apply for business analyst or data analyst internships, using your analytics portfolio as proof of skill.",
+          "futureFields": ["Business Analyst", "Data Analyst", "Operations Analyst", "Strategy Associate"]
+        }
+      }
+    }
+  }
+}
