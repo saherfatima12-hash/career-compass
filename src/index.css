@@ -1474,7 +1474,15 @@ margin:10px auto 0;
 
   text-shadow: 0 0 24px rgba(255, 255, 255, 0.3);
 }
-
+.hero-title {
+    z-index: 1;
+    letter-spacing: -0.02em;
+    font-size: clamp(1rem, 3vw, 1.9rem);
+    font-weight: 500;
+    line-height: 1.18;
+    position: relative;
+    margin: 20px 0px 14px;
+}
 .hero-description {
   margin: 26px auto;
   font-size: 19px;
