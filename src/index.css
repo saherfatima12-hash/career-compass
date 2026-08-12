@@ -297,10 +297,10 @@ body {
   );
 
 
-  backdrop-filter:blur(25px);
+  backdrop-filter:blur(35px);
 
 
-  -webkit-backdrop-filter:blur(25px);
+  -webkit-backdrop-filter:blur(35px);
 
 
   border:
@@ -311,7 +311,7 @@ body {
 
   0 30px 90px rgba(0,0,0,0.5);
 
-   border: 10px solid red !important;
+   /* border: 10px solid red !important; */
 
   position:relative;
 
