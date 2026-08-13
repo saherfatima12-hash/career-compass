@@ -71,9 +71,10 @@
     rgba(15, 23, 42, 0.95)
   );
 
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
+  
   border: 1px solid rgba(255, 255, 255, 0.25);
 
   margin-left: -60px;
@@ -91,6 +92,10 @@
 .career-category-card:hover {
   z-index: 100;
   transform: translateY(-25px) scale(1.05);
+}
+.career-category-card:hover {
+  z-index: 100;
+  transform: translateY(-25px) scale(1.08);
 }
 
 .career-category-card:first-child {
