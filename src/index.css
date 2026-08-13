@@ -1867,7 +1867,8 @@ margin:10px auto 0;
   .intro-card {
     width: 135px;
     height: 235px;
-    left:27%;
+    left: 50%;
+transform: translateX(-50%);
     padding: 14px;
       transform: translateX(-15px);
     border-radius: 22px;
