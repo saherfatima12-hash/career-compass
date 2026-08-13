@@ -1675,10 +1675,10 @@ margin:10px auto 0;
 
   border-radius: 30px;
 
- background: linear-gradient(
+background: linear-gradient(
   145deg,
-  rgba(139, 92, 246, 0.35),
-  rgba(255, 255, 255, 0.14)
+  rgba(34, 11, 87, 0.75),
+  rgba(2, 41, 92, 0.3)
 );
 
 backdrop-filter: blur(20px);
