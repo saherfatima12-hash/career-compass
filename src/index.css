@@ -2292,12 +2292,7 @@ margin:10px auto 0;
 
 /* ---------------- Responsive ---------------- */
 
-@media (max-width: 1024px) {
 
-  .feature-grid {
-    /* grid-template-columns: repeat(2, 1fr); */
-  }
-}
 
 @media (max-width: 768px) {
   .feature-section {
