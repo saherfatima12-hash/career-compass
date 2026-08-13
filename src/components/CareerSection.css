@@ -60,7 +60,7 @@
   height: 275px;
 
   border-radius: 28px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 
   background: linear-gradient(
