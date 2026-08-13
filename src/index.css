@@ -1867,11 +1867,11 @@ margin:10px auto 0;
   .intro-card {
     width: 135px;
     height: 235px;
-
+    left:22%;
     padding: 14px;
       transform: translateX(-15px);
     border-radius: 22px;
-     left: 22%;
+    
     /*sssss
       Glass kam rakha hai
       original color family same hai
