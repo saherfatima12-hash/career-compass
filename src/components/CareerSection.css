@@ -74,7 +74,7 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
-  
+
   border: 1px solid rgba(255, 255, 255, 0.25);
 
   margin-left: -60px;
@@ -133,10 +133,12 @@
 .career-category-card:nth-child(6) { transform: rotate(12deg); }
 
 .career-category-card:hover {
-  transform: translateY(-40px) rotate(0deg) scale(1.05);
-  z-index: 50;
+  transform: translateY(-40px) rotate(0deg) scale(1.08);
+  z-index: 100;
   box-shadow: 0 40px 80px rgba(37, 99, 235, 0.4);
 }
+
+
 
 /* ---------------- Assessment CTA ---------------- */
 
