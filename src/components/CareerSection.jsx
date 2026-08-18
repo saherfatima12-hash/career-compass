@@ -5,7 +5,7 @@ import CareerForm from "./CareerForm";
 const categories = [
 {
 title:"Technology",
-image:"/images/technology.png",
+image:"/images/technology.webp",
 desc:"Software Engineering, AI, Data Science and Web Development"
 },
 {
@@ -15,22 +15,22 @@ desc:"UI/UX, Graphic Design and other creative career paths"
 },
 {
 title:"Business",
-image:"/images/bussiness.png",
+image:"/images/bussiness.webp",
 desc:"Management, Marketing and Entrepreneurship"
 },
 {
 title:"Healthcare",
-image:"/images/meical.png",
+image:"/images/meical.webp",
 desc:"Medical, clinical and healthcare professions"
 },
 {
 title:"Engineering",
-image:"/images/engineer.png",
+image:"/images/engineer.webp",
 desc:"Engineering and technical specializations"
 },
 {
 title:"Finance",
-image:"/images/finance.png",
+image:"/images/finance.webp",
 desc:"Finance, Accounting and Banking careers"
 }
 ];
