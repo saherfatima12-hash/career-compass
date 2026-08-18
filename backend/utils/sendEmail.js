@@ -4,8 +4,8 @@ const nodemailer = require("nodemailer");
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-   user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD,
   },
 });
 
@@ -22,7 +22,7 @@ const sendEmail = async (email, token, type = "verify") => {
     subject = "Reset your Career Compass password";
     title = "Reset Your Password";
     message =
-      "Click the button below to create a new password for your Career Compass account.";
+      "Click the link below to create a new password for your Career Compass account.";
     buttonText = "Reset Password";
   } else {
     link = `https://career-compass-eo2e.vercel.app/api/users/verify/${token}`;
@@ -34,68 +34,81 @@ const sendEmail = async (email, token, type = "verify") => {
     buttonText = "Verify Email";
   }
 
+  const expiryLine =
+    type === "reset"
+      ? "This link will expire in 15 minutes."
+      : "This verification link will expire in 24 hours.";
+
+  // Plain-text version — spam filters weigh emails with no text
+  // alternative more heavily as "promotional/bulk"
+  const text = `Career Compass
+
+${title}
+
+${message}
+
+${buttonText}: ${link}
+
+${expiryLine}
+
+If you did not request this, you can safely ignore this email.
+`;
+
+  // Toned-down HTML — removed heavy gradients/large button styling
+  // that read as "marketing email" to spam filters, kept it simple
+  // and text-forward instead.
   const html = `
       <div style="
-        font-family: Arial, sans-serif;
-        background: #f5f7fb;
-        padding: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        padding: 24px;
+        color: #1f2937;
+        max-width: 480px;
+        margin: 0 auto;
+        line-height: 1.5;
       ">
 
-        <div style="
-          max-width: 500px;
-          margin: auto;
-          background: white;
-          padding: 30px;
-          border-radius: 15px;
-          text-align: center;
-        ">
+        <p style="font-size: 15px; margin: 0 0 4px;">
+          <strong>Career Compass</strong>
+        </p>
 
-          <h1 style="color:#132958;">
-            Career Compass
-          </h1>
+        <h2 style="font-size: 18px; margin: 16px 0 8px; color: #132958;">
+          ${title}
+        </h2>
 
-          <h2>
-            ${title}
-          </h2>
+        <p style="font-size: 14px; color: #374151; margin: 0 0 16px;">
+          ${message}
+        </p>
 
-          <p style="color:#555;font-size:16px;">
-            ${message}
-          </p>
-
+        <p style="margin: 0 0 16px;">
           <a href="${link}"
             style="
-              display:inline-block;
-              margin-top:20px;
-              padding:14px 30px;
-              background:#132958;
-              color:white;
-              text-decoration:none;
-              border-radius:30px;
+              color: #132958;
+              font-size: 14px;
+              text-decoration: underline;
             ">
             ${buttonText}
           </a>
+        </p>
 
-          <p style="
-            margin-top:25px;
-            color:#888;
-            font-size:13px;
-          ">
-            ${
-              type === "reset"
-                ? "This link will expire in 15 minutes."
-                : "This verification link will expire in 24 hours."
-            }
-          </p>
+        <p style="font-size: 12px; color: #6b7280; margin: 24px 0 0;">
+          ${expiryLine}
+        </p>
 
-        </div>
+        <p style="font-size: 12px; color: #9ca3af; margin: 4px 0 0;">
+          If you did not request this, you can safely ignore this email.
+        </p>
+
       </div>
     `;
 
   try {
     await transporter.sendMail({
-      from: `"Career Compass" <${process.env.EMAIL_USER}>`,
+      from: `"Career Compass" <${process.env.GMAIL_USER}>`,
       to: email,
+      replyTo: process.env.GMAIL_USER,
       subject: subject,
+      text: text,
       html: html,
     });
 
