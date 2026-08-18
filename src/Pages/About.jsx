@@ -197,7 +197,7 @@ const About = ({ user, setUser, setShowLogin, setShowModal }) => {
             >
               <div className="about-hero-visual-card">
                 <img
-                  src="/images/roadmap.png"
+                  src="/images/roadmap-final.webp"
                   alt="Career planning roadmap"
                   className="about-hero-visual-img"
                 />

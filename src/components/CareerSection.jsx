@@ -3,36 +3,36 @@ import "./CareerSection.css";
 import CareerForm from "./CareerForm";
 
 const categories = [
-{
-title:"Technology",
-image:"/images/technology.webp",
-desc:"Software Engineering, AI, Data Science and Web Development"
-},
-{
-title:"Design & Creativity",
-image:"/images/design.webp",
-desc:"UI/UX, Graphic Design and other creative career paths"
-},
-{
-title:"Business",
-image:"/images/bussiness.webp",
-desc:"Management, Marketing and Entrepreneurship"
-},
-{
-title:"Healthcare",
-image:"/images/meical.webp",
-desc:"Medical, clinical and healthcare professions"
-},
-{
-title:"Engineering",
-image:"/images/engineer.webp",
-desc:"Engineering and technical specializations"
-},
-{
-title:"Finance",
-image:"/images/finance.webp",
-desc:"Finance, Accounting and Banking careers"
-}
+  {
+    title: "Technology",
+    image: "/images/technology-final.webp",
+    desc: "Software Engineering, AI, Data Science and Web Development"
+  },
+  {
+    title: "Design & Creativity",
+    image: "/images/design-final.webp",
+    desc: "UI/UX, Graphic Design and other creative career paths"
+  },
+  {
+    title: "Business",
+    image: "/images/bussiness-final.webp",
+    desc: "Management, Marketing and Entrepreneurship"
+  },
+  {
+    title: "Healthcare",
+    image: "/images/meical-final.webp",
+    desc: "Medical, clinical and healthcare professions"
+  },
+  {
+    title: "Engineering",
+    image: "/images/engineer-final.webp",
+    desc: "Engineering and technical specializations"
+  },
+  {
+    title: "Finance",
+    image: "/images/finance-final.webp",
+    desc: "Finance, Accounting and Banking careers"
+  }
 ];
 
 

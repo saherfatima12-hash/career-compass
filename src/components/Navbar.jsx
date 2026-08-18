@@ -176,7 +176,7 @@ const handleProtectedClick = (e) => {
 
         <img
           className="navbar-logo-img"
-          src="/images/logo.png" 
+          src="/images/logo-final.webp" 
           alt="Career Compass Logo"
         />
 

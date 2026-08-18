@@ -33,7 +33,7 @@ const IntroSection = () => {
 
   <div className="intro-card">
 
-    <img className="intro-card-img" src="/images/assesment.png" alt="Career Assessment" />
+    <img className="intro-card-img" src="/images/assesment-final.webp" alt="Career Assessment" />
 
     <div className="intro-card-text">
 
@@ -52,7 +52,7 @@ const IntroSection = () => {
 
   <div className="intro-card">
 
-    <img className="intro-card-img" src="/images/guidance.webp" alt="Expert Career Guidance" />
+    <img className="intro-card-img" src="/images/guidance-final.webp" alt="Expert Career Guidance" />
 
     <div className="intro-card-text">
 
@@ -71,7 +71,7 @@ const IntroSection = () => {
 
   <div className="intro-card">
 
-    <img className="intro-card-img" src="/images/roadmap.png" alt="Learning Roadmap" />
+    <img className="intro-card-img" src="/images/roadmap-final.webp" alt="Learning Roadmap" />
 
     <div className="intro-card-text">
 
