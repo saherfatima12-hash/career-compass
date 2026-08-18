@@ -1,7 +1,13 @@
-console.log("🔥 RESEND sendEmail.js LOADED");
-const { Resend } = require("resend");
+console.log("📧 NODEMAILER sendEmail.js LOADED");
+const nodemailer = require("nodemailer");
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_APP_PASSWORD,
+  },
+});
 
 const sendEmail = async (email, token, type = "verify") => {
   let link;
@@ -28,12 +34,7 @@ const sendEmail = async (email, token, type = "verify") => {
     buttonText = "Verify Email";
   }
 
-  const { data, error } = await resend.emails.send({
-    from: "Career Compass <onboarding@resend.dev>",
-    to: [email],
-    subject: subject,
-
-    html: `
+  const html = `
       <div style="
         font-family: Arial, sans-serif;
         background: #f5f7fb;
@@ -88,15 +89,21 @@ const sendEmail = async (email, token, type = "verify") => {
 
         </div>
       </div>
-    `,
-  });
+    `;
 
-  if (error) {
+  try {
+    await transporter.sendMail({
+      from: `"Career Compass" <${process.env.GMAIL_USER}>`,
+      to: email,
+      subject: subject,
+      html: html,
+    });
+
+    // console.log("MAIL SENT to", email);
+  } catch (error) {
     console.error("EMAIL ERROR:", error);
     throw new Error("Failed to send email");
   }
-
-//   console.log("MAIL SENT:", data);
 };
 
 module.exports = sendEmail;
