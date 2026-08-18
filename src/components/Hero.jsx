@@ -7,22 +7,26 @@ const Hero = ({ user, setShowLogin,setHighlightAssessment}) => {
 
       <div className="hero-content">
 
-        <h1
+        <motion.h1
           className="hero-title"
-         
+          // initial={{opacity:0, y:50}}
+          // animate={{opacity:1, y:0}}
+          // transition={{duration:1}}
         >
           Discover the Career Path That's Right for You
-        </h1>
+        </motion.h1>
 
 
-        <p
+        <motion.p
           className="hero-description"
-         
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          transition={{delay:0.5}}
         >
           Get personalized, AI-powered career guidance built around your
           interests, skills, and academic background — so every decision
           you make moves you forward with confidence.
-        </p>
+        </motion.p>
 
 
         <motion.button

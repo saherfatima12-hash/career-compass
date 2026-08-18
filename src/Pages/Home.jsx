@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import SignupModal from "../components/SignupModal.jsx";
 import LoginModal from "../components/LoginModal.jsx";
 import ForgotPassword from "../components/ForgotPassword.jsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import CareerSection from "../components/CareerSection";
 
@@ -35,7 +35,11 @@ const [showForgotPassword, setShowForgotPassword] = useState(false);
 };
 
 
- 
+  useEffect(() => {
+
+  console.log("showLogin changed:", showLogin);
+
+}, [showLogin]);
   return (
     <div className="home-page">
 
