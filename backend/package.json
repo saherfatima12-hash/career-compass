@@ -20,6 +20,7 @@
     "groq-sdk": "^1.5.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^8.19.1",
-    "nodemailer": "^9.0.3"
+    "nodemailer": "^9.0.3",
+    "resend": "^6.19.0"
   }
 }

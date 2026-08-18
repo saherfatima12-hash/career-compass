@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
+import { FiMenu, FiX } from "react-icons/fi";
 // import "./Navbar.css";
 
 const Navbar = ({
@@ -12,6 +13,9 @@ const Navbar = ({
 }) => {
 
   const [profileOpen, setProfileOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navRef = useRef(null);
 
 
   useEffect(()=>{
@@ -72,7 +76,45 @@ const Navbar = ({
   },[]);
 
 
+  // Close the mobile menu on outside click or Escape key
+  useEffect(() => {
 
+    if (!isMenuOpen) return;
+
+    const handleClickOutside = (e) => {
+
+      if (navRef.current && !navRef.current.contains(e.target)) {
+
+        setIsMenuOpen(false);
+
+      }
+
+    };
+
+    const handleEscape = (e) => {
+
+      if (e.key === "Escape") {
+
+        setIsMenuOpen(false);
+
+      }
+
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
+
+    return () => {
+
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+
+    };
+
+  }, [isMenuOpen]);
+
+
+  const closeMenu = () => setIsMenuOpen(false);
 
 
   const logout = ()=>{
@@ -84,6 +126,8 @@ const Navbar = ({
 
     setProfileOpen(false);
 
+    closeMenu();
+
 
   };
 
@@ -94,11 +138,14 @@ const handleProtectedClick = (e) => {
   if(!user){
 
     setShowLogin(true);
+    closeMenu();
     return;
 
   }
 
   setHighlightAssessment(true);
+
+  closeMenu();
 
   setTimeout(() => {
 
@@ -122,7 +169,7 @@ const handleProtectedClick = (e) => {
 
   return (
     
-    <nav className="navbar" data-aos="fade-down">
+    <nav className="navbar" data-aos="fade-down" ref={navRef}>
 
       <div className="navbar-logo"
        data-aos="fade-right">
@@ -140,12 +187,25 @@ const handleProtectedClick = (e) => {
       </div>
 
 
+      <button
+        type="button"
+        className="navbar-toggle"
+        onClick={() => setIsMenuOpen((prev) => !prev)}
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={isMenuOpen}
+      >
+        {isMenuOpen ? <FiX /> : <FiMenu />}
+      </button>
 
-      <ul className="navbar-menu" data-aos="fade-left">
+
+      <ul
+        className={`navbar-menu${isMenuOpen ? " open" : ""}`}
+        data-aos="fade-left"
+      >
 
 
         <li className="navbar-menu-item">
-          <NavLink to="/" className="navbar-link">
+          <NavLink to="/" className="navbar-link" onClick={closeMenu}>
             Home
           </NavLink>
         </li>
@@ -163,13 +223,13 @@ const handleProtectedClick = (e) => {
 
 </li>
         <li className="navbar-menu-item">
-          <NavLink to="/about" className="navbar-link">
+          <NavLink to="/about" className="navbar-link" onClick={closeMenu}>
             About
           </NavLink>
         </li>
 
         <li className="navbar-menu-item">
-          <NavLink to="/contact" className="navbar-link">
+          <NavLink to="/contact" className="navbar-link" onClick={closeMenu}>
   Contact
 </NavLink>
         </li>
@@ -245,6 +305,7 @@ const handleProtectedClick = (e) => {
     
  
     setShowLogin(true);
+    closeMenu();
 
   }}
 
@@ -269,9 +330,12 @@ Switch Account
             <button 
               className="navbar-login-btn"
               
-              onClick={() => 
-                    
-                setShowLogin(true)}
+              onClick={() => {
+
+                setShowLogin(true);
+                closeMenu();
+
+              }}
             >
 
               Log In
