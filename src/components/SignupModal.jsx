@@ -466,7 +466,7 @@ errors.general &&
 
         <p className="input-error">
 
-        Please check your email and verify your account.
+        Please check your email. Don't forget to check your Spam or Junk folder too
 
         </p>
 
